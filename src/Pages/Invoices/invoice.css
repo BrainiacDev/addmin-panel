@@ -1,0 +1,258 @@
+body {
+    background: #fff;
+}
+
+.invoice-container {
+    background: #ebeef3;
+    margin: 0.5rem 0 0 2rem;
+    width: 80%;
+    padding: 2rem;
+    /* position: relative; */
+    /* display: flex; */
+    /* gap: 2rem; */
+}
+.invoice-tab {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.invoice-tab > p {
+    color: blue;
+}
+
+.invoice-content h2 {
+    color: #000;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 2rem;
+    padding-bottom: 0.5rem;
+}
+.invoice-content p {
+    color: #475569;
+    font-family: Mulish;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.25rem;
+    letter-spacing: 0.01563rem;
+    padding-bottom: 1rem;
+}
+.invoice-form {
+    display: flex;
+    /* width: 48.5625rem; */
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.invoice-detail {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.invoice-detail label {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1 0 0;
+}
+.invoice-detail .input-number {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+.invoice-detail option {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+.invoice-detail .input-date {
+    width: 60%;
+    height: 100%;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.invoice-description textarea {
+    display: flex;
+    width: 100%;
+    height: 7.3125rem;
+    padding: 1rem 1rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.25rem;
+    border: 1.2px solid #cbd5e1;
+    margin-bottom: 1rem;
+}
+.invoice-title {
+    background: #f8fafc;
+    width: 100%;
+    height: 100%;
+}
+.invoice-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.invoice-toggle > .input-date {
+    cursor: pointer;
+}
+.invoice-toggle .toggle-arrow {
+    position: relative;
+    right: 5%;
+}
+
+.text {
+    margin-bottom: 5px;
+}
+
+.input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+.invoice-due-date {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    /* justify-content: center; */
+}
+.invoice-due-detail .due-date {
+    width: 129%;
+    height: 100%;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background: #f8fafc;
+}
+.invoice-option {
+    width: 50%;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.select-option .invoice-option {
+    width: 70%;
+    padding: 1rem;
+}
+.invoice-currency {
+    margin-bottom: 1rem;
+}
+.invoice-currency select {
+    background: #f8fafc;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tr {
+    border-bottom: 1px solid #ddd;
+}
+th,
+td {
+    padding: 1rem;
+    font-weight: 200;
+}
+td input {
+    padding: 1rem 0.2rem;
+}
+.addItem-sect {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.addItem-sect p {
+    color: blue;
+    font-weight: 600;
+}
+.moreItems-Section {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 0rem;
+}
+.moreItems-details {
+    padding-top: 4rem;
+}
+.moreItems-details h2 {
+    font-weight: 200;
+    padding: 2rem 0 1rem 0;
+}
+
+.discount-input {
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 2rem;
+}
+.discount-input select {
+    width: 50%;
+    padding: 1rem;
+}
+.fixed-discount img {
+    position: relative;
+    right: 15%;
+    top: 10%;
+}
+.fixed-discount input {
+    padding: 0.7rem 0.5rem;
+}
+.tax-select {
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+}
+.tax p {
+    padding-bottom: 1rem;
+}
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem 0 0;
+}
+.withoutholding-sect {
+    display: flex;
+    align-items: center;
+}
+.wat-input-arrow img{
+    position: relative;
+    right: 12%;
+    top: 12%;
+}
+.wat-tax h2{
+    font-weight: 200;
+}
+.withoutholding-sect input{
+    padding: 1rem;
+}
+.shipping-section h2{
+    font-weight: 200;
+    padding-bottom: .5rem;
+}
+.shipping-section input{
+    width: 70%;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.total p{
+    font-weight: 200;
+    text-align: end;
+}
+
+.from-upload input{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
