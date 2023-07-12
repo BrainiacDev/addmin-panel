@@ -34,10 +34,10 @@ const SideBar = ({ children }) => {
                     </div>
 
                     <div className="list_container">
-                        <Link to='/'>
+                        <NavLink to='/'>
                             <img src={dashboard} alt="" />
                             <p>Dashboard</p>
-                        </Link>
+                        </NavLink>
                         <Link onClick={toggleSubMenu}>
                             <img src={invoice} alt="" />
                             <p>Invoice</p>
@@ -46,7 +46,7 @@ const SideBar = ({ children }) => {
                         {
                             isOpen && (
                                 <div className='side-submenu'>
-                                    <NavLink className='p-link active_link' to='/purchase-order'>
+                                    <NavLink className={({ isActive }) => isActive ? 'p-link active_link' : 'p-link'} to='/purchase-order'>
                                         <img src={polygonfill} alt="" />
                                         <p>Purchase Order</p> <span>26</span>
 
