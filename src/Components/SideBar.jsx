@@ -12,6 +12,8 @@ import accounting from './assets/accounting.svg'
 import customer from './assets/customer.svg'
 import payStack from './assets/paystack logo.svg'
 import notification from './assets/notification-nav.svg'
+import polygon from './assets/Polygon.svg'
+import polygonfill from './assets/Polygonfill.svg'
 
 const SideBar = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -36,33 +38,32 @@ const SideBar = ({ children }) => {
                             <img src={dashboard} alt="" />
                             <p>Dashboard</p>
                         </Link>
-                        <div>
+                        <Link onClick={toggleSubMenu}>
                             <img src={invoice} alt="" />
-                            <div onClick={toggleSubMenu} className="invoice">Invoice
-                                <img src={arrow} alt="" />
-                            </div>
-                            {
-                                isOpen && (
-                                    <div>
-                                        <NavLink to='/purchase-order'>
-                                            <img src={invoice} alt="" />
-                                            <p>Purchase Order</p>
+                            <p>Invoice</p>
+                            <img src={arrow} alt="" />
+                        </Link>
+                        {
+                            isOpen && (
+                                <div className='side-submenu'>
+                                    <NavLink className='p-link active_link' to='/purchase-order'>
+                                        <img src={polygonfill} alt="" />
+                                        <p>Purchase Order</p> <span>26</span>
 
-                                        </NavLink>
-                                        <NavLink to='/invoice-history'>
-                                            <img src={invoice} alt="" />
-                                            <p>Invoice History</p>
+                                    </NavLink>
+                                    <NavLink className='p-link' to='/invoice-history'>
+                                        <img src={polygon} alt="" />
+                                        <p>Invoice History </p><span>93</span>
 
-                                        </NavLink>
-                                        <NavLink to='/estimate'>
-                                            <img src={invoice} alt="" />
-                                            <p>Estimate </p>
+                                    </NavLink>
+                                    <NavLink className='p-link' to='/estimate'>
+                                        <img src={polygon} alt="" />
+                                        <p>Estimate</p><span>125</span>
 
-                                        </NavLink>
-                                    </div>
-                                )
-                            }
-                        </div>
+                                    </NavLink>
+                                </div>
+                            )
+                        }
                         <Link>
                             <img src={humanResource} alt="" />
                             <p>Human Resource</p>
@@ -95,7 +96,7 @@ const SideBar = ({ children }) => {
                         <div className='header-content'>
                             <img src={notification} alt="" />
                             <img src={payStack} alt="" />
-                            <p>Korede</p>
+                            <p>Kolade</p>
                         </div>
                     </div>
                 </header>

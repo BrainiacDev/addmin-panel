@@ -4,6 +4,7 @@ import invoiceImg from '../../Components/assets/invoice.svg'
 import arrow from '../../Components/assets/arrow.svg'
 import addImg from '../../Components/assets/add.svg'
 import percentImg from '../../Components/assets/percent.svg'
+import fileUpload from '../../Components/assets/cloud_upload.svg'
 
 const Invoice = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -15,7 +16,7 @@ const Invoice = () => {
 
     return (
         <div className='invoice-container'>
-            <div>
+        <div className='invoice-inner'>
                 <div className="invoice-tab">
                     <img src={invoiceImg} className='invoice-img' alt="" />
                     <p>Invoice</p>
@@ -170,12 +171,13 @@ const Invoice = () => {
                         <textarea name="tex" placeholder="Invoice Description" cols="30" rows="10" />
                     </div>
                 </div>
-                <div className="attachment-sect">
-                    <p>ATTACH A SUPPORTING DOCUMENT</p>
-                    <form action="" className='from-upload'>
-                        <input type="file" placeholder='add image' />
-                    </form>
+            <div className="attachment-container">
+                <div className="attach-sect">
+                    <img src={fileUpload} alt="" />
+                    <p>Click to upload or drag and drop a file</p>
+                    <p className='p-2'>PDF, MS, PNG or JPEG</p>
                 </div>
+            </div>
             </div>
             <div className="rightside-section">
                 <div>
@@ -195,6 +197,7 @@ const Invoice = () => {
                 </div>
 
             </div>
+
         </div>
 
     )

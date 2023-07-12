@@ -8,3 +8,7 @@ body {
   background: #dbe1e7;
   font-family: "Mulish", sans-serif;
 }
+
+html{
+  overflow-x: hidden;
+}
